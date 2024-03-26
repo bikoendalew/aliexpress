@@ -25,24 +25,25 @@
                 </svg>
                 
                 Account </span>
-                <div v-if="isAccountHover" @mouseleave="isAccountHover=false" class="absolute right-0  p-4 h-max w-max mt-3 bg-gray-100">
-                    <div class="flex space-x-2 py-2 border-b-2 border-gray-200">
-                        <button class="bg-red-500 text-white py-2 px-8 text-center font-bold rounded-sm">Join</button>
-                        <button class="bg-red-100 text-red py-2 px-8 text-center font-bold rounded-sm">Sign in</button>
+                <div v-if="isAccountHover" @mouseleave="isAccountHover=false" class=" z-50 absolute right-0  p-4 h-max w-max mt-3 bg-white border-2 bg-gray-100 border-grey-400">
+                    <span class="text-base text-grey-500 p-4">Welcome to Aliexpress!</span>
+                    <div class="flex space-x-2 py-2 p-4 border-b-2 border-gray-200">
+                        <a href="/register" class="bg-red-500 text-white py-2 px-8 text-center font-bold rounded-sm">Join</a>
+                        <a href="/login" class="bg-red-100 text-red py-2 px-8 text-center font-bold rounded-sm">Sign in</a>
                     </div>
-                    <ul class="my-3 text-sm">
+                    <ul class="my-3 text-sm space-y-3">
                         <li>
-                            <a href="/">My Orders</a>
+                            <a href="/" class="hover:text-red-500">My Orders</a>
                         </li>
                          <li>
-                            <a href="/">My Wishlist</a>
+                            <a href="/" class="hover:text-red-500">My Wishlist</a>
                         </li>
                          <li>
-                            <a href="/">My Coupons</a>
+                            <a href="/" class="hover:text-red-500">My Coupons</a>
                         </li>
 
                          <li>
-                            <a href="/">Message Center</a>
+                            <a href="/" class="hover:text-red-500">Message Center</a>
                         </li>
                     </ul>
                 </div>
