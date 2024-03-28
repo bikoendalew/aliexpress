@@ -10,10 +10,11 @@
 <script>
 import Logo from './LogoHeader.vue'
 import Search from './SearchComponent.vue'
+import Navbar from '../Navbar.vue'
 
 export default {
  components:{
-    Logo,Search
+    Logo,Search,Navbar
  }
 }
 </script>
