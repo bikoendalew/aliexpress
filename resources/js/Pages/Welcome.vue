@@ -1,92 +1,84 @@
-
 <template>
- 
-   <Index/>
-   <div class="bg-gray-100 h-screen">
-      <!-- category -->
-      <div class="w-full px-64 py-5">
-         <div class=" w-1/4 bg-white">
-            <p class="flex items-center">
-              
-                  <img class="mr-2" src="https://cdn-icons-png.flaticon.com/512/561/561123.png" alt="Menu" title="Menu" width="23" height="23">
-              
-               Categories
-               </p>
-             <ul class="mt-4 text-sm">
-              <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path fill-rule="evenodd" d="M5 3h14v18H5V3zm3 2v12h8V5zM8 16H7V8h1z" clip-rule="evenodd"/>
-                  </svg></i>
-                  <a href="/" >Women's Fashion</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg width="24" class="mr-2" height="24" viewBox="0 0 24 24">
-                     <path fill-rule="evenodd" d="M18 3h2v18h-2V3zM3 3h2v18H3V3zM8 5h8v14H8V5z" clip-rule="evenodd"/>
-                  </svg></i>
-                  <a href="/">Men's Clothing</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg width="24" height="24" class="mr-2" viewBox="0 0 24 24">
-                     <path d="M12 8c-1.94 0-3.5 1.56-3.5 3.5v4.84l7.7 7.7c.18.18.43.18.61 0l1.41-1.41c.18-.18.18-.43 0-.61L15.5 16v-4.84c0-1.94-1.56-3.5-3.5-3.5zM8 11v1H6v2h2v1z"/>
-                  </svg></i>
-                  <a href="/" >Jewelry & Watches</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg width="24" class="mr-2" height="24" viewBox="0 0 24 24">
-                     <path fill-rule="evenodd" d="M3 3h18v18H3V3zm4 2v14H16V5zM9 16H8v2h1z" clip-rule="evenodd"/>
-                  </svg></i>
-                  <a href="/" >Bags & Luggage</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path d="M12 16c-3 0-5.41-2.41-5.41-5.41s2.41-5.41 5.41-5.41 5.41 2.41 5.41 5.41-2.41 5.41-5.41 5.41zM10 5h4v6h-4V5zM16 5h4v6h-4V5z"/>
-                  </svg></i>
-                  <a href="/" >Shoes</a>
-                  </li>
+    <Index />
+    <div class="bg-gray-100 h-screen">
+        <!-- category -->
+        <div class="w-full justify-center space-x-4  max-w-screen-xl mx-auto  py-6 flex">
+            <CategoriesMenu/>
+            <!-- slider -->
+            <div class="w-3/5  space-y-6">
+                <div class="space-x-6 font-bold">
+                    <a class=" hover:text-red-500"  href="/">Live</a>
+                    <a class=" hover:text-red-500"  href="/">Flash Deals</a> 
+                    <a class=" hover:text-red-500"  href="/">Store You'll Love</a>
+                    <a class=" hover:text-red-500"  href="/">New User Zone</a>
+                </div>
 
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path d="M15.5 1h-8C6.11 1 5 1.9 5 3v18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM13 18h-2v-2h2v2zM11 16h-2v-2h2v2zM18 11c-1.1 0-2 .9-2 2s.9 2 2 2c1.1 0 2-.9 2-2s-.9-2-2-2z"/>
-                  </svg></i>
-                  <a href="/" >Consumer Electronics</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path d="M12 2C6.47 2 1.5 6.47 1.5 12s4.97 10 10.5 10 10.5-4.97 10.5-10S17.53 2 12 2zm0 18c-4.14 0-7.5-3.36-7.5-7.5 0-4.14 3.36-7.5 7.5-7.5 4.14 0 7.5 3.36 7.5 7.5 0 4.14-3.36 7.5-7.5 7.5z"/>
-                  </svg></i>
-                  <a href="/" >Home Improvement</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path d="M18 5v14h-4V5zM3 18h8v-8H3v8zM7 5v14h2V5H7z"/>
-                  </svg></i>
-                  <a href="/" >Toys & Hobbies</a>
-                  </li>
-                  <li class="flex items-center hover:text-red-500 hover:shadow-lg py-2">
-                  <i><svg  class="mr-2" width="24" height="24" viewBox="0 0 24 24">
-                     <path d="M12 2C6.47 2 1.5 6.47 1.5 12s4.97 10 10.5 10 10.5-4.97 10.5-10S17.53 2 12 2zm0 18c-4.14 0-7.5-3.36-7.5-7.5 0-4.14 3.36-7.5 7.5-7.5 4.14 0 7.5 3.36 7.5 7.5 0 4.14-3.36 7.5-7.5 7.5z"/>
-                  </svg></i>
-                  <a href="/">Beauty & Health (Makeup)</a>
-                  </li>
+                <div class="h-52">
+                  <img class="rounded-lg h-full w-full object-cover" 
+                  src="https://ae04.alicdn.com/kf/S2cb99275d6ab4824af4e37c45dd9ed97x.jpg_480x480.jpg_.webp"  alt="brand"/>
+                </div>
 
-             </ul>
-             </div> 
-         <!-- slider -->
-         <div class="w-2/4 bg-white"></div>
-           <!-- welcome section -->
-         <div class="w-1/4 bg-white"></div>
-      </div>
-   </div>
+                 <div class="w-full px-5  h-48 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg flex " >
+                        <div class=" w-1/4 space-y-2"> 
+                           <h5 class="font-bold">Welcome new comers</h5>
+                           <p>Exculisiv price for new comers: act now!</p>
+                           <button class="bg-red-500 text-white py-1 px-2">get your cuopon</button>
+                           
+                        </div>
+
+                        <div class="flex space-x-2 mt-2 w-3/4">
+                           <div class="rounded-lg bg-white w-24  h-44">
+                             <img class="pt-8" src="https://ae04.alicdn.com/kf/S2cb99275d6ab4824af4e37c45dd9ed97x.jpg_480x480.jpg_.webp">
+                             <div class="mx-auto mb-0">
+                               <p class="font-bold text-white bg-red-500 mb-0 px-2">Birr 3000</p>
+                                 <p class="font-medium text-sm text-gray-500 line-through mb-0 px-2">Birr 6000</p>
+                             </div>
+                           </div>
+                           <div class="rounded-lg bg-white  w-24   h-44">
+                               <img class="pt-8" src="https://ae04.alicdn.com/kf/S9218c4dfd58c42378c1d570493b82f5bU.png_480x480.png_.webp">
+                             <div class="mx-auto mb-0">
+                               <p class="font-bold text-white bg-red-500 mb-0 px-2">Birr 7000</p>
+                                 <p class="font-medium text-sm text-gray-500 line-through mb-0 px-2">Birr 30000</p>
+                             </div>
+                           </div>
+                           <div class="rounded-lg bg-white  w-24  h-44">
+                               <img class="pt-8" src="https://ae04.alicdn.com/kf/S337c025d39af4a40a75317c3e2d1ceb7F.png_480x480.png_.webp">
+                             <div class="mx-auto mb-0">
+                               <p class="font-bold text-white bg-red-500 mb-0 px-2">Birr 5000</p>
+                                 <p class="font-medium text-sm text-gray-500 line-through mb-0 px-2">Birr 30000</p>
+                             </div>
+                           </div>
+                           <div class="rounded-lg bg-white  w-24  h-44">
+                               <img class="pt-8" src="https://ae04.alicdn.com/kf/Sd223968c8dcf47c3b91c2c39e42e1da9I.jpg_480x480.jpg_.webp">
+                             <div class="mx-auto mb-0">
+                               <p class="font-bold text-white bg-red-500 mb-0 px-2">Birr 200</p>
+                               <p class="font-medium text-sm text-gray-500 line-through mb-0 px-2">Birr 300</p>
+                             </div>
+                           </div>
+                        </div>
+                </div>
+
+            </div>
+            <!-- welcome section -->
+            <div class="w-1/4 bg-gradient-to-b from-yellow-200 to-white space-y-4 items-center">
+              <div></div>
+              <div><img src="https://www.svgrepo.com/show/532392/user-shield.svg"></div>
+              <div class="w-full mx-6 "><h3 class="font-bold">Welcome To Aliexpress</h3></div>
+              <div class="space-between flex space-x-3 mx-6">
+               <button class="bg-red-500 px-7 py-2 text-white rounded-lg">Join</button>
+               <button class="bg-white px-4 py-2 text-black rounded-lg">Sign in</button>
+              </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-
-import Index from '../Components/Header/Index.vue'
-export default{
-   components:{Index }
-}
+import Index from "../Components/Header/Index.vue";
+import CategoriesMenu from "../Components/CategoriesMenu.vue";
+export default {
+    components: { Index, CategoriesMenu },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

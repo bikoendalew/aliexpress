@@ -31,7 +31,7 @@
     </svg>
 
   </button>
-   <Cart/>
+   <!-- <Cart/> -->
   
 
     </div>
